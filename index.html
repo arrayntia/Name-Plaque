@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Name Plaque Application</title>
+    <link rel="stylesheet" href="css/site.css">
+  </head>
+
+  <body>
+      <div class="wrapper">
+        <h1>Name Plaque Application</h1>
+
+        <p>Add any name of your chioce and we will show you how much it will cost. (Each letter is $5)</p>
+
+        <div class="form">
+          <div class="field-container">
+            <label class="field-placeholder" for="inputName">Enter a guess:</label>
+            <input class="field-input" id="guessField" onkeyup="getInput()" name="inputName" type="text" placeholder="Your name">
+           
+          </div>
+
+        </div>
+
+        <div class="plaque">
+          <div class="preview">
+            <div class="white-bg">
+              <span class="btn-round-left"></span>
+              <span class="btn-round-right"></span>
+            </div>
+
+            
+            <p class="plaque-prev">Your Name</p>
+
+            
+
+          </div>
+
+          <div class="price">
+            <div class="">
+              <div class="price-tag">Total: <span id="plaquePrice">$0</span></div>
+              <input type="submit" value="Buy Now" class="buy-submit" onclick="buyNow()">
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+   
+      <div class="from-instincthub" style="text-align: center;">
+
+        <h3>From</h3>
+        <a href="https://instincthub.com">
+        <img src="https://raw.githubusercontent.com/instincthub/images/main/logo/instincthub-logo-white.svg" alt="" srcset="" style="width:200px">
+         </a>
+      </div>
+    
+
+
+
+    <script src="script/buy_now.js" charset="utf-8"></script>
+
+
+  </body>
+
+  
+</html>
